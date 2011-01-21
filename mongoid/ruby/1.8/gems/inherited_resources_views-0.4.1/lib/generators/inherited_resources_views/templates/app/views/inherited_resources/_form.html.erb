@@ -1,0 +1,29 @@
+<table>
+<%- form_for("#{resource_instance_name.to_s.downcase}",
+      resource,
+      :url => resource.new_record? ? collection_url : resource_url(resource),
+      :html => { :method => (resource.new_record? ? "post" : "put") }) do |f| %>
+  <% if resource.errors.any? %>
+  <tr>
+    <td colspan="2">
+      <h2><%= pluralize(resource.errors.count, "error") %> prohibited this testa from being saved:</h2>
+      <ul>
+      <% resource.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </td>
+  </tr>
+  <% end %>
+  <% resource.attributes.each_pair do |field, value| %>
+    <% next if ['id', 'created_at', 'updated_at'].include?(field) %>
+    <tr>
+      <td><%= field.titleize %></td>
+      <td><%= f.text_field field.to_sym %></td>
+    </tr>
+  <% end %>
+  <tr>
+    <td colspan="2"><%= f.submit %></td>
+  </tr>
+<% end %>
+</table>

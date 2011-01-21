@@ -1,0 +1,120 @@
+package configuration for libffi
+cflags: -I/opt/local/lib/libffi-3.0.9/include  
+ldflags: -L/opt/local/lib
+libs: -lffi  
+
+have_library: checking for ffi_call() in -lffi... -------------------- yes
+
+"gcc -o conftest -I. -I/Users/micah/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/1.8/i686-darwin10.3.1 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -g -O2  -fno-common -pipe -fno-common   -I/opt/local/lib/libffi-3.0.9/include   conftest.c  -L. -L/Users/micah/.rvm/rubies/ruby-1.8.7-p299/lib -L.  -L/opt/local/lib     -lffi   -lruby-static -lffi  -lffi   -ldl -lobjc  "
+checked program was:
+/* begin */
+1: #include <ffi.h>
+2: 
+3: /*top*/
+4: int main() { return 0; }
+5: int t() { void ((*volatile p)()); p = (void ((*)()))ffi_call; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for ffi_prep_closure()... -------------------- yes
+
+"gcc -o conftest -I. -I/Users/micah/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/1.8/i686-darwin10.3.1 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -g -O2  -fno-common -pipe -fno-common   -I/opt/local/lib/libffi-3.0.9/include   conftest.c  -L. -L/Users/micah/.rvm/rubies/ruby-1.8.7-p299/lib -L.  -L/opt/local/lib    -lffi  -lffi   -lruby-static -lffi  -lffi   -ldl -lobjc  "
+conftest.c: In function ‘t’:
+conftest.c:3: error: ‘ffi_prep_closure’ undeclared (first use in this function)
+conftest.c:3: error: (Each undeclared identifier is reported only once
+conftest.c:3: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { void ((*volatile p)()); p = (void ((*)()))ffi_prep_closure; return 0; }
+/* end */
+
+"gcc -o conftest -I. -I/Users/micah/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/1.8/i686-darwin10.3.1 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -g -O2  -fno-common -pipe -fno-common   -I/opt/local/lib/libffi-3.0.9/include   conftest.c  -L. -L/Users/micah/.rvm/rubies/ruby-1.8.7-p299/lib -L.  -L/opt/local/lib    -lffi  -lffi   -lruby-static -lffi  -lffi   -ldl -lobjc  "
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { ffi_prep_closure(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for ffi_raw_call()... -------------------- yes
+
+"gcc -o conftest -I. -I/Users/micah/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/1.8/i686-darwin10.3.1 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -g -O2  -fno-common -pipe -fno-common   -I/opt/local/lib/libffi-3.0.9/include   conftest.c  -L. -L/Users/micah/.rvm/rubies/ruby-1.8.7-p299/lib -L.  -L/opt/local/lib    -lffi  -lffi   -lruby-static -lffi  -lffi   -ldl -lobjc  "
+conftest.c: In function ‘t’:
+conftest.c:3: error: ‘ffi_raw_call’ undeclared (first use in this function)
+conftest.c:3: error: (Each undeclared identifier is reported only once
+conftest.c:3: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { void ((*volatile p)()); p = (void ((*)()))ffi_raw_call; return 0; }
+/* end */
+
+"gcc -o conftest -I. -I/Users/micah/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/1.8/i686-darwin10.3.1 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -g -O2  -fno-common -pipe -fno-common   -I/opt/local/lib/libffi-3.0.9/include   conftest.c  -L. -L/Users/micah/.rvm/rubies/ruby-1.8.7-p299/lib -L.  -L/opt/local/lib    -lffi  -lffi   -lruby-static -lffi  -lffi   -ldl -lobjc  "
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { ffi_raw_call(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for ffi_prep_raw_closure()... -------------------- yes
+
+"gcc -o conftest -I. -I/Users/micah/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/1.8/i686-darwin10.3.1 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -g -O2  -fno-common -pipe -fno-common   -I/opt/local/lib/libffi-3.0.9/include   conftest.c  -L. -L/Users/micah/.rvm/rubies/ruby-1.8.7-p299/lib -L.  -L/opt/local/lib    -lffi  -lffi   -lruby-static -lffi  -lffi   -ldl -lobjc  "
+conftest.c: In function ‘t’:
+conftest.c:3: error: ‘ffi_prep_raw_closure’ undeclared (first use in this function)
+conftest.c:3: error: (Each undeclared identifier is reported only once
+conftest.c:3: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { void ((*volatile p)()); p = (void ((*)()))ffi_prep_raw_closure; return 0; }
+/* end */
+
+"gcc -o conftest -I. -I/Users/micah/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/1.8/i686-darwin10.3.1 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -g -O2  -fno-common -pipe -fno-common   -I/opt/local/lib/libffi-3.0.9/include   conftest.c  -L. -L/Users/micah/.rvm/rubies/ruby-1.8.7-p299/lib -L.  -L/opt/local/lib    -lffi  -lffi   -lruby-static -lffi  -lffi   -ldl -lobjc  "
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { ffi_prep_raw_closure(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_thread_blocking_region()... -------------------- no
+
+"gcc -o conftest -I. -I/Users/micah/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/1.8/i686-darwin10.3.1 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -g -O2  -fno-common -pipe -fno-common   -I/opt/local/lib/libffi-3.0.9/include   conftest.c  -L. -L/Users/micah/.rvm/rubies/ruby-1.8.7-p299/lib -L.  -L/opt/local/lib    -lffi  -lffi   -lruby-static -lffi  -lffi   -ldl -lobjc  "
+conftest.c: In function ‘t’:
+conftest.c:3: error: ‘rb_thread_blocking_region’ undeclared (first use in this function)
+conftest.c:3: error: (Each undeclared identifier is reported only once
+conftest.c:3: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { void ((*volatile p)()); p = (void ((*)()))rb_thread_blocking_region; return 0; }
+/* end */
+
+"gcc -o conftest -I. -I/Users/micah/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/1.8/i686-darwin10.3.1 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -g -O2  -fno-common -pipe -fno-common   -I/opt/local/lib/libffi-3.0.9/include   conftest.c  -L. -L/Users/micah/.rvm/rubies/ruby-1.8.7-p299/lib -L.  -L/opt/local/lib    -lffi  -lffi   -lruby-static -lffi  -lffi   -ldl -lobjc  "
+Undefined symbols:
+  "_rb_thread_blocking_region", referenced from:
+      _t in ccrWPVkb.o
+ld: symbol(s) not found
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { rb_thread_blocking_region(); return 0; }
+/* end */
+
+--------------------
+
