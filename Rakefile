@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-Chuckabuck::Application.load_tasks
+Backbone::Application.load_tasks

@@ -1,2 +1,0 @@
-require 'facebook_config'
-FacebookConfig.load_facebooker_yaml

@@ -10,4 +10,8 @@ class People::OmniauthCallbacksController < Devise::OmniauthCallbacksController
       redirect_to new_person_registration_url
     end
   end
+  
+  def facebook_registration
+    
+  end
 end

@@ -18,7 +18,10 @@ class Person
   field :facebook_uid
   field :facebook_token
   field :admin, :type => Boolean, :default => false
-
+  field :location_name
+  field :location_id
+  field :birthday, :type => DateTime
+  field :gender
 
   # Include default devise modules. Others available are:
   # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
@@ -27,10 +30,39 @@ class Person
 
   def self.find_for_facebook_oauth(fb_data, signed_in_resource=nil)
     data = fb_data['extra']['user_hash']
+    if person = self.where(:email => data['email']).first
+      person
+    else # Create a person with a stub password. 
+      self.create!(
+        :email => data['email'], 
+        :name => data['name'], 
+        :facebook_uid => data['user_id'], 
+        :facebook_token => data['oauth_token'],
+        :location_name => data['location']['name'],
+        :location_id => data['location']['id'],
+        :birthday => data['birthday'].present? ? Date.parse(data['birthday']) : nil,
+        :gender => data['gender'],
+        :password => Devise.friendly_token[0,20]
+      )
+    end
+  end
+  
+  def self.find_for_facebook_registration(fb_data, signed_in_resource=nil)
+    data = fb_data['registration']
     if person = self.where(:email => data["email"]).first
       person
-    else # Create an user with a stub password. 
-      self.create!(:email => data["email"], :password => Devise.friendly_token[0,20]) 
+    else # Create a person with a stub password. 
+      self.create!(
+        :email => data['email'], 
+        :name => data['name'], 
+        :facebook_uid => data['user_id'], 
+        :facebook_token => data['oauth_token'],
+        :location_name => data['location']['name'],
+        :location_id => data['location']['id'],
+        :birthday => data['birthday'].present? ? Date.parse(data['birthday']) : nil,
+        :gender => data['gender'],
+        :password => Devise.friendly_token[0,20] 
+      )
     end
   end
   

@@ -36,7 +36,7 @@ module Backbone
     # config.i18n.default_locale = :de
 
     # JavaScript files you want as :defaults (application.js is always included).
-    config.action_view.javascript_expansions[:defaults] = %w()
+    config.action_view.javascript_expansions[:defaults] = %w(jquery jquery-ui/js/jquery-ui-1.8.9.custom.min)
 
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
@@ -49,5 +49,9 @@ module Backbone
       g.test_framework :rspec, :fixture => true
       g.fixture_replacement :fabrication, :dir => "spec/fabricators"
     end
+    
+    require 'facebook_config'
+    FacebookConfig.load_facebooker_yaml
+    config.middleware.use "Rack::Facebook::SignedRequest", :secret => FacebookConfig.secret
   end
 end

@@ -3,7 +3,7 @@
   %head
     %title Backbone
     = csrf_meta_tag
-    = javascript_include_tag 'application', 'jquery'
+    = javascript_include_tag :defaults
     = render '/layouts/fb_js'
     = yield :js
   
@@ -18,6 +18,8 @@
         .panel
       #content
         .panel
+          #flash
+            = render '/layouts/flash', :flash => flash
           = yield
       #sidebar
         .panel

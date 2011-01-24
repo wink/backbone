@@ -1,0 +1,10 @@
+- if flash[:notice]
+  .notice= flash[:notice].html_safe
+- if flash[:success]
+  .success= flash[:success].html_safe
+- if flash[:warn]
+  .warn= flash[:warn].html_safe
+- if flash[:error]
+  .error= flash[:error].html_safe
+- if flash[:alert]
+  .error= flash[:alert].html_safe

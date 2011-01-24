@@ -21,6 +21,8 @@ gem 'unicorn'
 gem 'haml-rails'
 # gem 'jquery-rails'
 gem 'devise', :git => "https://github.com/plataformatec/devise.git"
+gem 'rack-facebook-signed-request', :git => 'git://github.com/wink/rack-facebook-signed-request.git'
+
 # gem 'devise_oauth2_canvas_facebook'
 gem "oa-oauth", :require => "omniauth/oauth"
 gem 'mogli'
