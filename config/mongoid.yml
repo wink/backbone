@@ -8,11 +8,11 @@ defaults: &defaults
 
 development:
   <<: *defaults
-  database: chuckabuck_development
+  database: backbone_development
 
 test:
   <<: *defaults
-  database: chuckabuck_test
+  database: backbone_test
 
 # set these environment variables on your prod server
 production:
