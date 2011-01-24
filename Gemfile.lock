@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: https://github.com/plataformatec/devise.git
-  revision: 0615c0a
+  revision: 68f699b
   specs:
     devise (1.2.rc)
       bcrypt-ruby (~> 2.1.2)
@@ -63,7 +63,7 @@ GEM
     bson (1.2.0)
     bson_ext (1.2.0)
     builder (2.1.2)
-    capybara (0.4.0)
+    capybara (0.4.1.1)
       celerity (>= 0.7.9)
       culerity (>= 0.2.4)
       mime-types (>= 1.16)
@@ -71,7 +71,7 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       selenium-webdriver (>= 0.0.27)
-      xpath (~> 0.1.2)
+      xpath (~> 0.1.3)
     carrierwave (0.5.1)
       activesupport (~> 3.0)
     celerity (0.8.7)
@@ -95,7 +95,7 @@ GEM
       term-ansicolor (~> 1.0.5)
     cucumber-rails (0.3.2)
       cucumber (>= 0.8.0)
-    culerity (0.2.14)
+    culerity (0.2.15)
     database_cleaner (0.6.0)
     delorean (0.2.1)
       chronic
@@ -122,7 +122,7 @@ GEM
       railties (~> 3.0)
     has_scope (0.5.0)
     hashie (0.4.0)
-    heroku (1.17.8)
+    heroku (1.17.10)
       json (~> 1.4.6)
       launchy (~> 0.3.2)
       rest-client (>= 1.4.0, < 1.7.0)
@@ -136,7 +136,7 @@ GEM
     inherited_resources_views (0.4.1)
       inherited_resources (>= 1.0)
     json (1.4.6)
-    json_pure (1.4.6)
+    json_pure (1.5.0)
     kgio (2.1.1)
     launchy (0.3.7)
       configuration (>= 0.0.5)
@@ -270,11 +270,11 @@ DEPENDENCIES
   haml-rails
   heroku_san!
   hpricot
-  inherited_resources (= 1.1.2)
+  inherited_resources (>= 1.1.2)
   inherited_resources_views
   launchy
   mogli
-  mongoid (= 2.0.0.rc.6)
+  mongoid (>= 2.0.0.rc.6)
   oa-oauth
   rack-ssl-enforcer
   rails (= 3.0.3)

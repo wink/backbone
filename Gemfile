@@ -5,7 +5,7 @@ gem 'rails', '3.0.3'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem "mongoid", "2.0.0.rc.6"
+gem "mongoid", ">=2.0.0.rc.6"
 gem "bson_ext", "~> 1.2"
 
 # Use unicorn as the web server
@@ -31,7 +31,7 @@ gem 'ruby_parser'
 gem 'simple_form'
 gem 'activemerchant'
 # gem 'braintree', '2.5.0' # something else is requiring this version. not sure what...not activemerchant
-gem 'inherited_resources', '1.1.2'
+gem 'inherited_resources', '>=1.1.2'
 gem 'inherited_resources_views'
 gem 'responders'
 # gem 'has_scope'
@@ -51,7 +51,7 @@ gem 'rack-ssl-enforcer', :require => 'rack/ssl-enforcer'
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
-group :development, :test do
+group :development, :test, :cucumber do
   gem 'faker'
   gem 'rspec-rails', ">= 2.0.0.beta.19"
   gem 'capybara'
@@ -66,7 +66,7 @@ group :development, :test do
   gem 'launchy'
   gem 'test_notifier'
   gem 'fabrication'#, :git => 'git://github.com/wink/fabrication.git'
-  # gem 'mongoid-rspec'
+  # gem 'mongoid-rspec', :git => 'git://github.com/shingara/mongoid-rspec.git'
   gem 'redgreen'
   gem 'fakeweb'
   gem 'delorean'

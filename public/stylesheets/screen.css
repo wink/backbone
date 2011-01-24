@@ -1,0 +1,92 @@
+/*
+Syntax error: Undefined mixin 'blueprint-scaffolding'.
+        on line 20 of app/stylesheets/screen.scss, in `blueprint-scaffolding'
+        from line 20 of app/stylesheets/screen.scss
+
+15: // @include blueprint
+16: 
+17: // But Compass recommends that you scope your blueprint styles
+18: // So that you can better control what pages use blueprint
+19: // when stylesheets are concatenated together.
+20: @include blueprint-scaffolding("body.bp");
+21: 
+22: body.bp {
+23:   @include blueprint-typography(true);
+24:   @include blueprint-utilities;
+25:   @include blueprint-debug;
+
+Backtrace:
+app/stylesheets/screen.scss:20:in `blueprint-scaffolding'
+app/stylesheets/screen.scss:20
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.25/lib/sass/tree/mixin_node.rb:62:in `perform!'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `map'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.25/lib/sass/tree/node.rb:317:in `perform!'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.25/lib/sass/tree/root_node.rb:59:in `perform!'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.25/lib/sass/tree/root_node.rb:37:in `perform'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.25/lib/sass/tree/root_node.rb:29:in `render'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.25/lib/sass/plugin.rb:223:in `update_stylesheet'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.25/lib/sass/plugin.rb:88:in `update_stylesheets'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.25/lib/sass/plugin.rb:81:in `each'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.25/lib/sass/plugin.rb:81:in `update_stylesheets'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.25/lib/sass/plugin.rb:79:in `each'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.25/lib/sass/plugin.rb:79:in `update_stylesheets'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.25/lib/sass/plugin.rb:50:in `check_for_updates'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.25/lib/sass/plugin/rack.rb:40:in `call'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/warden-1.0.3/lib/warden/manager.rb:35:in `call'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/warden-1.0.3/lib/warden/manager.rb:34:in `catch'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/warden-1.0.3/lib/warden/manager.rb:34:in `call'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.3/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.3/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.3/lib/action_dispatch/middleware/cookies.rb:295:in `call'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.3/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.3/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.3/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.3/lib/action_dispatch/middleware/show_exceptions.rb:46:in `call'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/railties-3.0.3/lib/rails/rack/logger.rb:13:in `call'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/activesupport-3.0.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/rack-1.2.1/lib/rack/lock.rb:11:in `synchronize'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.3/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/railties-3.0.3/lib/rails/application.rb:168:in `call'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/railties-3.0.3/lib/rails/application.rb:77:in `send'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/railties-3.0.3/lib/rails/application.rb:77:in `method_missing'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/railties-3.0.3/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+/Users/micah/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/Users/micah/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/Users/micah/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/Users/micah/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/Users/micah/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/Users/micah/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/Users/micah/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/Users/micah/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/Users/micah/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/Users/micah/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/rack-1.2.1/lib/rack/handler/webrick.rb:13:in `run'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/railties-3.0.3/lib/rails/commands/server.rb:65:in `start'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/railties-3.0.3/lib/rails/commands.rb:30
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/railties-3.0.3/lib/rails/commands.rb:27:in `tap'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/railties-3.0.3/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'blueprint-scaffolding'.\A         on line 20 of app/stylesheets/screen.scss, in `blueprint-scaffolding'\A         from line 20 of app/stylesheets/screen.scss\A \A 15: // @include blueprint\A 16: \A 17: // But Compass recommends that you scope your blueprint styles\A 18: // So that you can better control what pages use blueprint\A 19: // when stylesheets are concatenated together.\A 20: @include blueprint-scaffolding(\"body.bp\");\A 21: \A 22: body.bp {\A 23:   @include blueprint-typography(true);\A 24:   @include blueprint-utilities;\A 25:   @include blueprint-debug;"; }

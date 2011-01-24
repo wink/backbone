@@ -1,0 +1,19 @@
+development:
+  app_id: 'APP_ID'
+  api_key: APP_KEY
+  secret: SECRET
+
+test:
+  app_id: 'APP_ID'
+  api_key: APP_KEY
+  secret: SECRET
+
+staging:
+  app_id: 'APP_ID'
+  api_key: APP_KEY
+  secret: SECRET
+  
+production:
+  app_id: 'APP_ID'
+  api_key: APP_KEY
+  secret: SECRET

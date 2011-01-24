@@ -1,4 +1,7 @@
 Chuckabuck::Application.routes.draw do
+  devise_for :people, :controllers => { :omniauth_callbacks => "people/omniauth_callbacks" }
+  
+  root :to => "main#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,0 +1,2 @@
+Fabricator(:person) do
+end
