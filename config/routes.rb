@@ -1,4 +1,4 @@
-Chuckabuck::Application.routes.draw do
+Backbone::Application.routes.draw do
   devise_for :people, :controllers => { :omniauth_callbacks => "people/omniauth_callbacks" }
   
   root :to => "main#index"

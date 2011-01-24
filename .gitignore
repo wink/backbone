@@ -1,3 +1,4 @@
 config/facebook.yml
 log/*.log
 config/initializers/devise.rb
+tmp/**/*.*

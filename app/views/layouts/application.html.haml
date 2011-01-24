@@ -4,6 +4,7 @@
     %title Backbone
     = csrf_meta_tag
     = javascript_include_tag 'application', 'jquery'
+    = render '/layouts/fb_js'
     = yield :js
   
     = stylesheet_link_tag 'compiled/screen.css', :media => 'screen, projection'
