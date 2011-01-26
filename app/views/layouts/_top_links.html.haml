@@ -1,0 +1,7 @@
+%ul#top-links.menu
+  %li
+    - if person_signed_in?
+      = "Hi, #{current_person.name}"
+      = link_to '(Not you?)', destroy_person_session_path
+    - else
+      = render '/shared/login_button'

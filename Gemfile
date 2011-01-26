@@ -49,6 +49,7 @@ gem 'rack-ssl-enforcer', :require => 'rack/ssl-enforcer'
 # gem 'bj'
 # gem 'nokogiri'
 # gem 'aws-s3', :require => 'aws/s3'
+gem 'lorem'
 
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators

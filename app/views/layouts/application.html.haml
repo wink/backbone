@@ -13,16 +13,19 @@
       = stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
     = yield :css
   %body.bp.two-col
+    #fb-root
+    #flash
+      = render '/layouts/flash', :flash => flash
     #container
       #header
         .panel
+          = render '/layouts/header'
       #content
         .panel
-          #flash
-            = render '/layouts/flash', :flash => flash
           = yield
       #sidebar
         .panel
+          = render '/layouts/sidebar'
           = yield :sidebar
       #footer
         .panel

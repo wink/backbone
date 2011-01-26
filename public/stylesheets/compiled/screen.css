@@ -546,23 +546,41 @@ body.two-col #content {
 
 /* line 2, ../../../app/stylesheets/partials/_common.sass */
 #container .panel {
+  padding: 10px;
   border: 1px solid grey;
-  width: 100%;
-  height: 100%;
 }
 /* line 6, ../../../app/stylesheets/partials/_common.sass */
+#container ul.menu {
+  list-style: none;
+}
+/* line 8, ../../../app/stylesheets/partials/_common.sass */
 #container #header {
   height: 200px;
 }
-/* line 8, ../../../app/stylesheets/partials/_common.sass */
-#container #content {
-  height: 600px;
-}
 /* line 10, ../../../app/stylesheets/partials/_common.sass */
-#container #sidebar {
-  height: 600px;
+#container #header .panel {
+  height: 180px;
 }
-/* line 12, ../../../app/stylesheets/partials/_common.sass */
+/* line 13, ../../../app/stylesheets/partials/_common.sass */
+#container #sidebar {
+  height: 100%;
+}
+/* line 15, ../../../app/stylesheets/partials/_common.sass */
+#container #sidebar .panel {
+  height: 100%;
+}
+/* line 17, ../../../app/stylesheets/partials/_common.sass */
 #container #footer {
   height: 300px;
+}
+/* line 19, ../../../app/stylesheets/partials/_common.sass */
+#container #footer .panel {
+  height: 280px;
+}
+
+/* line 22, ../../../app/stylesheets/partials/_common.sass */
+#flash {
+  position: absolute;
+  width: 100%;
+  text-align: center;
 }
