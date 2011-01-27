@@ -2,25 +2,33 @@
 Syntax error: Undefined mixin 'blueprint-scaffolding'.
         on line 20 of app/stylesheets/screen.scss, in `blueprint-scaffolding'
         from line 20 of app/stylesheets/screen.scss
+        from line 1 of app/stylesheets/application.sass
 
-15: // @include blueprint
-16: 
-17: // But Compass recommends that you scope your blueprint styles
-18: // So that you can better control what pages use blueprint
-19: // when stylesheets are concatenated together.
-20: @include blueprint-scaffolding("body.bp");
-21: 
-22: body.bp {
-23:   @include blueprint-typography(true);
-24:   @include blueprint-utilities;
-25:   @include blueprint-debug;
+15:   #content
+16:   #sidebar
+17:     height: 100%
+18:     .panel
+19:       height: 100%
+20:   #footer
+21:     height: 300px
+22:     .panel
+23:       height: 280px
 
 Backtrace:
 app/stylesheets/screen.scss:20:in `blueprint-scaffolding'
 app/stylesheets/screen.scss:20
+app/stylesheets/application.sass:1
 /Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.25/lib/sass/tree/mixin_node.rb:62:in `perform!'
 /Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
 /Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `map'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.25/lib/sass/tree/import_node.rb:78:in `perform!'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.25/lib/sass/tree/import_node.rb:64:in `_perform'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
+/Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.25/lib/sass/tree/root_node.rb:37:in `perform'
 /Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
 /Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `map'
 /Users/micah/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
@@ -136,4 +144,4 @@ app/stylesheets/screen.scss:20
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'blueprint-scaffolding'.\A         on line 20 of app/stylesheets/screen.scss, in `blueprint-scaffolding'\A         from line 20 of app/stylesheets/screen.scss\A \A 15: // @include blueprint\A 16: \A 17: // But Compass recommends that you scope your blueprint styles\A 18: // So that you can better control what pages use blueprint\A 19: // when stylesheets are concatenated together.\A 20: @include blueprint-scaffolding(\"body.bp\");\A 21: \A 22: body.bp {\A 23:   @include blueprint-typography(true);\A 24:   @include blueprint-utilities;\A 25:   @include blueprint-debug;"; }
+  content: "Syntax error: Undefined mixin 'blueprint-scaffolding'.\A         on line 20 of app/stylesheets/screen.scss, in `blueprint-scaffolding'\A         from line 20 of app/stylesheets/screen.scss\A         from line 1 of app/stylesheets/application.sass\A \A 15:   #content\A 16:   #sidebar\A 17:     height: 100%\A 18:     .panel\A 19:       height: 100%\A 20:   #footer\A 21:     height: 300px\A 22:     .panel\A 23:       height: 280px"; }

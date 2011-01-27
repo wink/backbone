@@ -13,7 +13,7 @@ Then /^I should be authorized with Facebook$/ do
 end
 
 When /^I sign in with Facebook Connect$/ do
-  When %{I click "Login with Facebook"}
+  When %{I click "Login"}
 end
 
 Given /^I am logged in as a Facebook user$/ do

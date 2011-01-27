@@ -568,3 +568,39 @@ body.two-col #content {
   width: 100%;
   text-align: center;
 }
+
+/* line 4, ../../../app/stylesheets/application.sass */
+#container #header {
+  height: 200px;
+  position: relative;
+}
+/* line 7, ../../../app/stylesheets/application.sass */
+#container #header #logo {
+  width: 400px;
+  float: left;
+}
+/* line 10, ../../../app/stylesheets/application.sass */
+#container #header #top-menu {
+  width: 500px;
+  float: right;
+}
+/* line 13, ../../../app/stylesheets/application.sass */
+#container #header .panel {
+  height: 180px;
+}
+/* line 16, ../../../app/stylesheets/application.sass */
+#container #sidebar {
+  height: 100%;
+}
+/* line 18, ../../../app/stylesheets/application.sass */
+#container #sidebar .panel {
+  height: 100%;
+}
+/* line 20, ../../../app/stylesheets/application.sass */
+#container #footer {
+  height: 300px;
+}
+/* line 22, ../../../app/stylesheets/application.sass */
+#container #footer .panel {
+  height: 280px;
+}

@@ -7,7 +7,7 @@
     = render '/layouts/fb_js'
     = yield :js
   
-    = stylesheet_link_tag 'compiled/application.css', :media => 'screen, projection'
+    = stylesheet_link_tag 'compiled/modal.css', :media => 'screen, projection'
     = stylesheet_link_tag 'compiled/print.css', :media => 'print'
     /[if IE]
       = stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
@@ -19,15 +19,13 @@
     #container
       #header
         .panel
-          = render '/layouts/header'
       #content
         .panel
           %h1= yield :title
           = yield
       #sidebar
         .panel
-          = render '/layouts/sidebar'
           = yield :sidebar
       #footer
         .panel
-          = render '/layouts/footer'
+          

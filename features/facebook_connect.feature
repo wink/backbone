@@ -2,7 +2,7 @@ Feature: Facebook Connect
 
 Scenario: login with facebook
   Given I am on the home page
-  When I click "Login with Facebook"
+  When I click "Login"
   Then I should be authorized with Facebook
   And I should see "Hi Micah Winkelspecht"
   And I should not see "Login with Facebook"
