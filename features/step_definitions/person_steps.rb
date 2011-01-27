@@ -30,14 +30,5 @@ Given /^I am signed out$/ do
 end
 
 Given /^I am signed in$/ do
-  # email = DEFAULT_EMAIL
-  # password = DEFAULT_PASSWORD
-  # 
-  # Given %{I am signed out}
-  # And %{I have one person "#{email}" with password "#{password}"}
-  # When %{I go to the sign in page}
-  # And %{I fill in "person_email" with "#{email}"}
-  # And %{I fill in "person_password" with "#{password}"}
-  # And %{I press "Sign in"}
   Given %{I am logged in as a Facebook user}
 end

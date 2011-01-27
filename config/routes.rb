@@ -5,7 +5,11 @@ Backbone::Application.routes.draw do
   
   devise_for :people, :controllers => { :omniauth_callbacks => "people/omniauth_callbacks" }
   
-
+  
+  match 'privacy' => 'pages#privacy', :as => :privacy
+  match 'contact' => 'pages#contact', :as => :contact
+  match 'about' => 'pages#about', :as => :about
+  match 'terms' => 'pages#terms', :as => :terms
   
   root :to => "main#index"
   # The priority is based upon order of creation:

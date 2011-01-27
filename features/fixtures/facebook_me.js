@@ -87,7 +87,7 @@
       }
    ],
    "gender": "male",
-   "email": "winkelspecht@gmail.com",
+   "email": "wink@example.com",
    "timezone": -8,
    "locale": "en_US",
    "verified": true,

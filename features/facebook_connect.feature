@@ -1,22 +1,13 @@
 Feature: Facebook Connect
 
-Scenario: not logged in, not authorized
+Scenario: login with facebook
   Given I am on the home page
   When I click "Login with Facebook"
   Then I should be authorized with Facebook
+  And I should see "Hi Micah Winkelspecht"
+  And I should not see "Login with Facebook"
 
-Scenario: logged in, not authorized
+Scenario: logout
   Given I am signed in
-  When I go to the home page
-  Then I should be authorized with Facebook
-
-Scenario: logged in, authorized
-  Given I am signed in
-  And I am Facebook authorized
-  When I go to the home page
-  Then I should be authorized with Facebook
-  
-Scenario: not logged in, authorized
-  Given I am on the home page
-  And I am Facebook authorized
-  Then I should be authorized with Facebook
+  When I click "Not you?"
+  Then I should not see "Hi Micah Winkelspecht"

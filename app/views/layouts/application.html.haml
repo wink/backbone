@@ -1,7 +1,7 @@
 !!!
 %html
   %head
-    %title Backbone
+    %title= "Backbone :: #{yield(:title)}"
     = csrf_meta_tag
     = javascript_include_tag :defaults
     = render '/layouts/fb_js'
@@ -22,6 +22,7 @@
           = render '/layouts/header'
       #content
         .panel
+          %h1= yield :title
           = yield
       #sidebar
         .panel
@@ -29,3 +30,4 @@
           = yield :sidebar
       #footer
         .panel
+          = render '/layouts/footer'
