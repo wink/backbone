@@ -551,34 +551,42 @@ body.two-col #content {
 }
 /* line 6, ../../../app/stylesheets/partials/_common.sass */
 #container ul.menu {
-  list-style: none;
+  list-style-type: none;
+  position: relative;
+  width: 100%;
+  text-align: center;
 }
-/* line 8, ../../../app/stylesheets/partials/_common.sass */
+/* line 11, ../../../app/stylesheets/partials/_common.sass */
+#container ul.menu li {
+  display: inline;
+  margin-right: 30px;
+}
+/* line 14, ../../../app/stylesheets/partials/_common.sass */
 #container #header {
   height: 200px;
 }
-/* line 10, ../../../app/stylesheets/partials/_common.sass */
+/* line 16, ../../../app/stylesheets/partials/_common.sass */
 #container #header .panel {
   height: 180px;
 }
-/* line 13, ../../../app/stylesheets/partials/_common.sass */
+/* line 19, ../../../app/stylesheets/partials/_common.sass */
 #container #sidebar {
   height: 100%;
 }
-/* line 15, ../../../app/stylesheets/partials/_common.sass */
+/* line 21, ../../../app/stylesheets/partials/_common.sass */
 #container #sidebar .panel {
   height: 100%;
 }
-/* line 17, ../../../app/stylesheets/partials/_common.sass */
+/* line 23, ../../../app/stylesheets/partials/_common.sass */
 #container #footer {
   height: 300px;
 }
-/* line 19, ../../../app/stylesheets/partials/_common.sass */
+/* line 25, ../../../app/stylesheets/partials/_common.sass */
 #container #footer .panel {
   height: 280px;
 }
 
-/* line 22, ../../../app/stylesheets/partials/_common.sass */
+/* line 28, ../../../app/stylesheets/partials/_common.sass */
 #flash {
   position: absolute;
   width: 100%;
