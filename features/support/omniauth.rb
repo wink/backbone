@@ -1,6 +1,6 @@
 Devise::OmniAuth.test_mode!
 
-FACEBOOK_INFO = File.read(File.join(Rails.root.to_s, 'features', 'fixtures', 'facebook_me.js'))
+FACEBOOK_INFO = read_fixture('facebook_me.js')
 DEFAULT_EMAIL = JSON.parse(FACEBOOK_INFO)['email']
 DEFAULT_PASSWORD = 'password'
 DEFAULT_FACEBOOK_UID = JSON.parse(FACEBOOK_INFO)['id']
@@ -24,3 +24,7 @@ FakeWeb.allow_net_connect = %r[^https?://(localhost|127.0.0.1)]
 FakeWeb.register_uri(:get, 'https://graph.facebook.com/me?access_token=abcdef', :response => read_fixture('facebook_me.response'))
 FakeWeb.register_uri(:get, 'https://graph.facebook.com/me/friends?access_token=abcdef', :response => read_fixture('facebook_my_friends.response'))
 
+
+def current_person
+  Person.where(:email => DEFAULT_EMAIL).first || Person.find_for_facebook_registration(YAML.load(read_fixture('facebook_registration.yml')))
+end

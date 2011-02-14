@@ -28,7 +28,6 @@ Spork.prefork do
   Capybara.default_selector = :css
 
   Dir.glob(File.join(File.dirname(__FILE__), '../../spec/fabricators.rb')).each {|f| require f }
-  
 end
  
 Spork.each_run do
@@ -51,11 +50,9 @@ Spork.each_run do
   
 end
 
+include Devise::TestHelpers
 
-def current_person
-  Person.where(:email => DEFAULT_EMAIL).first || Fabricate(:person, :email => DEFAULT_EMAIL)
-end
 
 def read_fixture(filename)
-  File.join(Rails.root.to_s, 'features', 'fixtures', filename)
+  File.read(File.join(Rails.root.to_s, 'features', 'fixtures', filename))
 end

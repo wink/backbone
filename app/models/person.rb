@@ -55,8 +55,8 @@ class Person
       self.create!(
         :email => data['email'], 
         :name => data['name'], 
-        :facebook_uid => fb_data['uid'], 
-        :facebook_token => fb_data['credentials']['token'],
+        :facebook_uid => fb_data['user_id'], 
+        :facebook_token => fb_data['oauth_token'],
         :location_name => data['location']['name'],
         :location_id => data['location']['id'],
         :birthday => data['birthday'].present? ? Date.parse(data['birthday']) : nil,

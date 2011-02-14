@@ -12,15 +12,6 @@ Then /^I should be authorized with Facebook$/ do
   person.facebook_token.should == DEFAULT_FACEBOOK_TOKEN
 end
 
-When /^I sign in with Facebook Connect$/ do
-  When %{I click "Login"}
-end
-
-Given /^I am logged in as a Facebook user$/ do
-  Given %{I am on the home page}
-  When %{I sign in with Facebook Connect}
-end
-
 Given /^I am not signed in$/ do
   Given %{I am signed out}
 end
@@ -30,5 +21,11 @@ Given /^I am signed out$/ do
 end
 
 Given /^I am signed in$/ do
-  Given %{I am logged in as a Facebook user}
+  When %{I sign in}
+end
+
+When /^I sign in$/ do
+  Person.destroy_all
+  visit '/people/auth/facebook'
+  Then %{show me the page}
 end

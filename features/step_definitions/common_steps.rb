@@ -29,3 +29,7 @@ When /^(?:|I )click "([^"]*)"(?: within "([^"]*)")?$/ do |link, selector|
     click_link(link)
   end
 end
+
+When /^I wait (\d+) seconds?$/ do |seconds|
+  sleep seconds.to_i
+end

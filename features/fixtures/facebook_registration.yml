@@ -1,0 +1,22 @@
+--- 
+signed_request: sTVDXDnXs0UzagUDTGDvSNdEf05Ke3q000lD8lBMc1U.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTYxMjYwMDAsImlzc3VlZF9hdCI6MTI5NjEyMjA0Niwib2F1dGhfdG9rZW4iOiIxOTExNDgyNTc1Nzg4MTR8Mi5RU1JTcFo2dlV0THZzWjlIeEwxSGx3X18uMzYwMC4xMjk2MTI2MDAwLTY4MjYzMDAyMHxHbUxlX2p2RWQwbElWWWdBOXFlZWlVa2ViWDQiLCJyZWdpc3RyYXRpb24iOnsibmFtZSI6Ik1pY2FoIFdpbmtlbHNwZWNodCIsImJpcnRoZGF5IjoiMDlcLzE5XC8xOTgxIiwiZ2VuZGVyIjoibWFsZSIsImxvY2F0aW9uIjp7Im5hbWUiOiJNYXJpbmEgZGVsIFJleSwgQ2FsaWZvcm5pYSIsImlkIjoxMTM4NTg0MjE5NTc3NTF9LCJlbWFpbCI6IndpbmtlbHNwZWNodFx1MDA0MGdtYWlsLmNvbSJ9LCJyZWdpc3RyYXRpb25fbWV0YWRhdGEiOnsiZmllbGRzIjoibmFtZSxiaXJ0aGRheSxnZW5kZXIsbG9jYXRpb24sZW1haWwifSwidXNlciI6eyJsb2NhbGUiOiJlbl9VUyIsImNvdW50cnkiOiJ1cyJ9LCJ1c2VyX2lkIjoiNjgyNjMwMDIwIn0
+expires: 1296126000
+registration_metadata: 
+  fields: name,birthday,gender,location,email
+action: create
+algorithm: HMAC-SHA256
+registration: 
+  name: Micah Winkelspecht
+  location: 
+    name: Marina del Rey, California
+    id: 113858421957751
+  gender: male
+  birthday: 09/19/1981
+  email: wink@example.com
+user_id: \"682630020\"
+controller: people/facebook_registrations
+oauth_token: 191148257578814|2.QSRSpZ6vUtLvsZ9HxL1Hlw__.3600.1296126000-682630020|GmLe_jvEd0lIVYgA9qeeiUkebX4
+user: 
+  country: us
+  locale: en_US
+issued_at: 1296122046
